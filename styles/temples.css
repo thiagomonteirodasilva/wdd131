@@ -1,0 +1,28 @@
+/* Used for mobile view */
+@media (max-width: 768px) {
+  nav ul{
+    flex-direction: column;
+  }
+
+  .images {
+    grid-template-columns: 1fr;
+  }
+
+  figure {
+    text-align: center;
+  }
+
+  figcaption {
+    width: 100%;
+  }
+
+  .active {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  #menu {
+    top: 4rem;
+  }
+}
