@@ -8,14 +8,6 @@
     grid-template-columns: 1fr;
   }
 
-  figure {
-    text-align: center;
-  }
-
-  figcaption {
-    width: 100%;
-  }
-
   .active {
     display: block;
   }

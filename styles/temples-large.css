@@ -63,12 +63,11 @@ main h2 {
 }
 
 .images img {
-  width: 300px;
+  width: 250px;
 }
 
-figcaption {
+figure, figcaption {
   text-align: center;
-  width: 300px;
 }
 
 footer {
