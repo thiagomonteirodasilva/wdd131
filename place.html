@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Thiago Silva - Country Page">
+    <meta name="author" content="Thiago Silva">
+    <title>Thiago Silva - WDD 131 - Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <header>
+      <h1>Brazil</h1>
+      <span></span>
+    </header>
+    <main>
+      <div class="hero">
+        <picture class="hero-picture">
+          <source media="(min-width: 1024px)" srcset="images/hero-large.webp">
+          <source media="(min-width: 768px)" srcset="images/hero-medium.webp">
+          <img src="images/hero-small.webp" alt="Brazil Place Image" width="500" height="250">
+        </picture>
+        <section class="data">
+          <h2>Data</h2>
+          <p><b>Area: </b>8.510.000 km²</p>
+          <p><b>Population: </b>212,986,659</p>
+          <p><b>Capital: </b>Brasilia</p>
+          <p><b>Language: </b>Portuguese</p>
+          <p><b>Currency: </b>Real (BRL)</p>
+          <p><b>Time Zone: </b>GMT-3</p>
+          <p><b>Calling Code: </b>+55</p>
+          <p><b>Internet TLD: </b>.br</p>
+        </section>
+        <section class="weather">
+          <h2>Weather</h2>
+          <div class="weather-mobile">
+            <img src="images/weather.svg" alt="Weather SVG Icon">
+          </div>
+          <p><b>Temperature: </b><span id="temperature">10</span> °C</p>
+          <p><b>Conditions: </b>Partly Cloudy</p>
+          <p><b>Wind: </b><span id="wind-speed">5</span> km/h</p>
+          <p><b>Wind Chill: </b><span id="wind-chill"></span></p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>© <span id="currentyear"></span> Thiago Silva - Brazil</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
