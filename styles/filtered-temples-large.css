@@ -1,0 +1,125 @@
+/* Used for larger view */
+
+:root {
+  --primary-color: #1f0872;
+  --secondary-color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#menu {
+  display: none;
+}
+
+header {
+  display: grid;
+  grid-gap: 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  grid-template-columns: 1fr 1fr;
+}
+
+header h1 {
+  text-align: center;
+  margin: auto;
+}
+
+nav {
+  padding: 1rem;
+}
+
+nav a:hover {
+  background-color: #b3b3b3;
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  color: var(--secondary-color);
+  font-size: larger;
+}
+
+main { 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main h2 {
+  text-align: center;
+}
+
+.images {
+  text-align: center;
+}
+
+.images img {
+  width: 450px;
+}
+
+.card {
+  background-color: #d4d4d4;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Desktop */
+@media (max-width: 1024px) {
+  header {
+    padding: 2rem;
+  }
+  
+  #menu {
+    display: block;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    right: 2rem;
+  }
+
+  #menu::before {
+    content: "☰";
+  }
+
+  #menu.active::before {
+    content: "X";
+  }
+
+  nav {
+    display: none;
+  }
+
+  .navigation.active {
+    display: block;
+  }
+
+  nav a {
+    padding: 1rem;
+	  text-align: center;
+  }
+
+  nav ul{
+    flex-direction: column;
+  }
+
+  .images {
+    grid-template-columns: 1fr 1fr;
+  }
+}
